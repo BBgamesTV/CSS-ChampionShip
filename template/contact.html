@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me contacter</title>
+    <link rel="icon"  type="image/x-icon" href="/rsrc/cssChampionship40x40.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-Contact.css">
+</head>
+<body>
+
+    <header>
+        <img class="cssChampionship" src="../rsrc/cssChampionshipLogo640x400.png">
+        <div class="pageSelection">
+            <a href="/">Accueil</a>
+            <a href="../template/portfolio.html">Portfolio</a>
+            <a href="../template/aPropos.html">FAQ</a>
+            <a href="../template/contact.html" class="active">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Me contacter</h1>
+        <form>
+            <fieldset>
+                <legend>Qui êtes-vous ?</legend>
+
+                <input type="radio" id="entreprise" name="userIdentity" value="entreprise">
+                <label for="entreprise">Une entreprise</label>
+                <input type="radio" id="particulier" name="userIdentity" value="particulier">
+                <label for="particulier">Un particulier</label>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend>Votre demande</legend>
+
+                <label for="objet">Objet:</label>
+                <input type="text" id="objet">
+
+                <label for="demande">Demande:</label>
+                <textarea id="demande"></textarea>
+            </fieldset>
+
+            <fieldset class="box">
+                <legend>Comment vous contacter ?</legend>
+
+                <label for="adresse">Adresse électronique:</label>
+                <input type="email" id="adresse" placeholder="JohnDoe@spacehz.fr">
+
+                <label for="numero">Numéro de téléphone:</label>
+                <input type="tel" id="numero" placeholder="+3333333333" pattern="[0-9]{10}">
+            </fieldset>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+
+    <footer>
+        <p>Photographe professionnel - 30 Avenue du coquelicot 37000 Tours</p>
+
+        <a href="https://www.instagram.com/">Compte instagram</a>
+
+        <p>@ 1995 par Jean-Timothé Foto</p>
+    </footer>
+    <!-- Bastien Brousse -->
+</body>
+</html>

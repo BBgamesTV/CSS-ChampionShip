@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="icon"  type="image/x-icon" href="/rsrc/cssChampionship40x40.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-FAQ.css">
+</head>
+<body>
+
+    <header>
+        <img class="cssChampionship" src="../rsrc/cssChampionshipLogo640x400.png">
+        <div class="pageSelection">
+            <a href="/">Accueil</a>
+            <a href="../template/portfolio.html">Portfolio</a>
+            <a href="../template/aPropos.html" class="active">FAQ</a>
+            <a href="../template/contact.html">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Foire aux questions</h1>
+        <div class="informations">
+            <h2 class="question">Depuis quand faîtes vous de la photographie ?</h2>
+            <h3 class="reponse" style="display: none;">
+                Cela fait maintenant 48 ans que je suis tombé amoureux de l'art des images statiques. Je me souviens encore de ma première photo, avec l'appareil argentique de mon grand-papa !
+            </h3>
+
+            <h2 class="question">Quel matos utilisez-vous ?</h2>
+            <h3 class="reponse" style="display: none;">
+                Je n'utilise qu'un seul appareil, il s'agit de mon fidèle KidiZoom Vtech 2007, sur lequel j'utilise une optique de 50 mm pour les portraits ou de 135 mm pour les vues à couper le souffle. 
+                Avec ceci, j'utilise un trépied fait main à base de bambou.
+            </h3>
+
+            <h2 class="question">Sucré ou salé ?</h2>
+            <h3 class="reponse" style="display: none;">Salé !</h3>
+
+            <h2 class="question">Après vos services, quels sont les droits d'utilisation sur les photos ?</h2>
+            <h3 class="reponse" style="display: none;">Il faut me créditer et me payer 10 euros pour chaque utilisation des photos sinon conséquences.</h3>
+
+            <h2 class="question">Espérez-vous devenir un jour un grand nom de la photographie ?</h2>
+            <h3 class="reponse" style="display: none;">Comment ça ? C'est déjà le cas.</h3>
+
+            <h2 class="question">Avez-vous déjà participé à des expositions ?</h2>
+            <h3 class="reponse" style="display: none;">Non, je n'ai pas besoin de ça pour me faire connaitre. Et puis les organisateurs ne comprennent jamais mon génie artistique.</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>Photographe professionnel - 30 Avenue du coquelicot 37000 Tours</p>
+
+        <a href="https://www.instagram.com/">Compte instagram</a>
+
+        <p>@ 1995 par Jean-Timothé Foto</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.informations h2.question').click(function() {
+            $(this).toggleClass('active').next().slideToggle();
+            });
+        });
+    </script>
+    <!-- Bastien Brousse -->
+</body>
+</html>

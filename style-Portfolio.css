@@ -1,0 +1,35 @@
+/* Gallery styles */
+.galerie {
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galerie h2 {
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .galerie figure {
+    margin-bottom: 2rem;
+    width: calc(33.333% - 2rem);
+  }
+  
+  .galerie figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .galerie figure img:hover {
+    transform: scale(1.05);
+  }
+  
+  .galerie figure figcaption {
+    margin: 1rem 0 0;
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--text-color);
+  }
